@@ -117,7 +117,7 @@ That is too broad and may cause Codex to overbuild.
 
 ## Recommended next build steps
 
-1. Replace `hello@cowealth.com` with the real email address.
+1. Confirm the public contact address (currently `joshumo95@gmail.com`).
 2. Add a basic contact form service, such as Formspree, Tally, Typeform, or HubSpot.
 3. Add real founder/team bios.
 4. Add real program dates and partner application details.
@@ -129,3 +129,47 @@ That is too broad and may cause Codex to overbuild.
 ## Beginner setup guide
 
 Start with `STEP_BY_STEP_FOR_DUMMIES.md`. It walks you through GitHub, GitHub Pages, the custom domain, and Codex step by step.
+
+## Mission, coaching, capital, and partner pathways
+
+The website remains plain HTML, CSS, and JavaScript. The homepage and mission
+page use the mission, vision, values, business stages, and operating model from
+the Covenant Wealth Partner Introduction (August 2026). Launch milestones are
+presented as a proposed roadmap.
+
+- `mission/index.html`: mission, vision, six values, five business stages, and the operating model.
+- `coaching/index.html`: seek coaching or apply to become a vetted coach. Applying does not grant approval.
+- `capital/index.html`: capital-readiness inquiry, one-time giving interest, and monthly-partner interest.
+- `partners/index.html`: five partner categories, with contributions and value returned.
+- `churches/index.html`, `investors/index.html`, and the three partner subfolders: category-specific partnership forms.
+- `entrepreneurs/index.html`: entrepreneur interest and links to coaching and capital readiness.
+- `forms.css`: service-page and form layouts.
+- `interest-form.js`: prepares separate email drafts for every form, including all completed fields.
+
+All forms currently prepare email drafts to `joshumo95@gmail.com`. Visitors
+must review the draft and press **Send** in their email application. These forms
+do not send messages from a server. To change a recipient, update the relevant
+form's `action="mailto:..."` and its visible email links/help text. The JavaScript
+uses each form's recipient and subject independently.
+
+### Adding a donation link later
+
+There is no payment provider connected yet. The giving forms express interest;
+they do not collect money or start recurring charges. When a verified hosted
+payment link is available, add an ordinary link to `capital/index.html` next to
+the `donate` panel, and a monthly-giving link next to `monthly-partner`. Keep the
+inquiry forms as an alternative. Only describe online payment or recurring
+billing after the linked provider actually supports it. Card or bank details
+should be entered on the payment provider's checkout, not emailed through
+these forms.
+
+### Local checks
+
+Serve the repository with `python3 -m http.server 8000`, then check every route
+and the homepage links. JavaScript syntax checks are `node --check script.js`
+and `node --check interest-form.js`; no package installation or build is needed.
+For browser checks, test narrow phones, tablets, and desktop layouts, menu and
+skip-link keyboard behavior, expanded forms, required fields, and the full
+recipient/subject/body of each email draft. Use test data and intercept the
+email handoff when automating checks; draft generation does not verify email
+delivery. The forms also have a native mailto fallback when JavaScript is off.

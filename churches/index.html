@@ -3,11 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Churches &amp; Ministries Interest | Covenant Wealth</title>
-  <meta name="description" content="Express your interest in the Covenant Wealth churches &amp; ministries pathway.">
+  <title>Churches &amp; Ministries Partnership | Covenant Wealth</title>
+  <meta name="description" content="Explore the Covenant Wealth churches &amp; ministries partnership: contributions, value returned, and a contact form.">
   <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../forms.css">
 </head>
-<body class="homepage interest-page">
+<body class="homepage cw-site interest-page">
   <a class="skip-link" href="#main-content">Skip to main content</a>
   <header class="site-header dashboard-header">
     <a class="brand" href="../index.html" aria-label="Covenant Wealth home">
@@ -17,49 +18,71 @@
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="../index.html">Home</a>
-      <a href="../entrepreneurs/">Entrepreneurs</a>
-      <a href="../churches/" aria-current="page">Churches &amp; Ministries</a>
-      <a href="../investors/">Investors &amp; Donors</a>
+      <a href="../mission/">Mission</a>
+      <a href="../coaching/">Coaching</a>
+      <a href="../capital/">Capital &amp; Giving</a>
+      <a href="../partners/" aria-current="page">Partners</a>
     </nav>
   </header>
   <main id="main-content" class="interest-layout" tabindex="-1">
     <div class="interest-intro">
-      <p class="eyebrow">Churches &amp; Ministries</p>
-      <h1>Build a pathway for your community.</h1>
-      <p class="lead">Tell us how your church or ministry would like to participate: hosting a cohort, referring entrepreneurs, supporting scholarships, or partnering.</p>
-      <p>This interest form starts a conversation. It does not commit you to a program or partnership.</p>
-      <a href="../index.html#dashboard">← Back to all pathways</a>
+      <p class="eyebrow">Partner pathway · Churches &amp; Ministries</p>
+      <h1>Build a marketplace ministry pathway.</h1>
+      <p class="lead">Connect your congregation or ministry with a practical pathway to equip faith-driven entrepreneurs and strengthen community impact.</p>
+      <dl class="partner-exchange">
+        <div><dt>What you contribute</dt><dd>Referrals, convening space, pastoral support, and scholarships.</dd></div>
+        <div><dt>What you receive in return</dt><dd>A practical marketplace ministry pathway and stronger entrepreneur engagement.</dd></div>
+      </dl>
+      <p>Our partnership principle: align mission, define roles, share measures, and build a repeatable pathway.</p>
+
+      <p><a href="../partners/">← Explore all five partner pathways</a></p>
     </div>
-    <section class="interest-panel" aria-labelledby="form-heading">
-      <h2 id="form-heading">Share your interest</h2>
-      <p id="form-help">Name and email are required. Continuing opens your email app with a draft addressed to joshumo95@gmail.com. Review it and press Send there.</p>
-      <form class="interest-form" action="mailto:joshumo95@gmail.com?subject=Covenant%20Wealth%20%E2%80%94%20Churches%20%26%20Ministries%20interest" method="post" enctype="text/plain" data-pathway="Churches &amp; Ministries" aria-describedby="form-help">
+    <section class="interest-panel" aria-labelledby="church-form-heading">
+      <h2 id="church-form-heading">Explore a partnership</h2>
+      <p>This interest form starts a conversation. It does not commit you to a program or partnership.</p>
+      <p id="church-help">Name and email are required. This opens your email app. Review and send the draft to <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a>.</p>
+      <form id="church-form" class="interest-form" action="mailto:joshumo95@gmail.com?subject=Covenant%20Wealth%20%E2%80%94%20Churches%20%26%20Ministries%20interest" method="post" enctype="text/plain" data-pathway="Churches &amp; Ministries" aria-describedby="church-help">
         <div class="form-field">
-          <label for="full-name">Full name (required)</label>
-          <input id="full-name" name="name" autocomplete="name" maxlength="120" required>
+          <label for="church-name">Full name (required)</label>
+          <input id="church-name" name="name" data-label="Full name" required autocomplete="name" maxlength="160" type="text">
         </div>
         <div class="form-field">
-          <label for="email">Email address (required)</label>
-          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+          <label for="church-email">Email address (required)</label>
+          <input id="church-email" name="email" data-label="Email address" required autocomplete="email" maxlength="254" type="email">
         </div>
         <div class="form-field">
-          <label for="organization">Church or ministry name (optional)</label>
-          <input id="organization" name="organization" autocomplete="organization" maxlength="160">
+          <label for="church-organization">Church or ministry name (optional)</label>
+          <input id="church-organization" name="organization" data-label="Church or ministry name" autocomplete="organization" maxlength="160" type="text">
         </div>
         <div class="form-field">
-          <label for="message">How would you like to get involved? (optional)</label>
-          <textarea id="message" name="message" rows="5" maxlength="2000"></textarea>
+          <label for="church-interest">Partnership interest (optional)</label>
+          <select id="church-interest" name="partnership_interest" data-label="Partnership interest"><option value="">Choose an option</option><option value="Host a cohort or partner event">Host a cohort or partner event</option><option value="Refer entrepreneurs">Refer entrepreneurs</option><option value="Provide pastoral support">Provide pastoral support</option><option value="Sponsor scholarships">Sponsor scholarships</option><option value="Explore a partnership">Explore a partnership</option></select>
+        </div>
+        <div class="form-field">
+          <label for="church-role">Potential founding partner role (optional)</label>
+          <select id="church-role" name="founding_partner_role" data-label="Potential founding partner role"><option value="">Choose an option</option><option value="Host — convene a cohort or event">Host — convene a cohort or event</option><option value="Refer — introduce entrepreneurs, mentors, or coaches">Refer — introduce entrepreneurs, mentors, or coaches</option><option value="Sponsor — support scholarships, curriculum, or capacity">Sponsor — support scholarships, curriculum, or capacity</option><option value="Advise — shape programs, governance, or outcomes">Advise — shape programs, governance, or outcomes</option><option value="Explore a combination">Explore a combination</option></select>
+        </div>
+        <div class="form-field">
+          <label for="church-message">What would you like to contribute or explore? (optional)</label>
+          <textarea id="church-message" name="message" data-label="What would you like to contribute or explore?" rows="4" maxlength="1600"></textarea>
         </div>
         <button class="button" type="submit">Continue to email</button>
-        <p id="email-status" role="status"></p>
-        <a id="email-draft" hidden>Open prepared email</a>
+        <p class="email-status" role="status"></p>
+        <a class="email-draft" hidden>Open prepared email</a>
       </form>
-      <p class="email-fallback">No email app configured? Email <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a> directly and mention the churches &amp; ministries pathway.</p>
+      <p class="email-fallback">No email app configured? Email <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a> directly and mention churches &amp; ministries. Forms do not send messages automatically.</p>
     </section>
   </main>
-  <footer class="site-footer">
-    <p><strong>Covenant Wealth</strong> | Churches &amp; Ministries</p>
-    <p><a href="../index.html">Back to homepage</a></p>
+  <footer class="site-footer rich-footer">
+    <div>
+      <p><strong>Covenant Wealth</strong></p>
+      <p>Faith. Enterprise. Community impact.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="../index.html">Home</a>
+      <a href="../partners/">Partner with us</a>
+      <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a>
+    </nav>
   </footer>
   <script src="../script.js"></script>
   <script src="../interest-form.js"></script>
