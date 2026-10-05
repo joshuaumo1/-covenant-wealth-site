@@ -138,10 +138,10 @@ the Covenant Wealth Partner Introduction (August 2026). Launch milestones are
 presented as a proposed roadmap.
 
 - `mission/index.html`: mission, vision, six values, five business stages, and the operating model.
-- `coaching/index.html`: seek coaching or apply to become a vetted coach. Applying does not grant approval.
-- `capital/index.html`: capital-readiness inquiry, one-time giving interest, and monthly-partner interest.
+- `coaching/index.html`: coaching overview; `coaching/request/` and `coaching/apply/` contain the separate coaching request and vetted-coach application forms.
+- `capital/index.html`: capital and giving overview; `capital/readiness/`, `capital/one-time-gift/`, and `capital/monthly-partner/` contain separate inquiry forms.
 - `partners/index.html`: five partner categories, with contributions and value returned.
-- `churches/index.html`, `investors/index.html`, and the three partner subfolders: category-specific partnership forms.
+- `churches/index.html`, `investors/index.html`, and the three partner subfolders: category information and buttons for applications and approved-member access. Each category’s `interest/` subfolder contains its partnership form.
 - `entrepreneurs/index.html`: entrepreneur interest and links to coaching and capital readiness.
 - `forms.css`: service-page and form layouts.
 - `interest-form.js`: prepares separate email drafts for every form, including all completed fields.
@@ -156,8 +156,9 @@ uses each form's recipient and subject independently.
 
 There is no payment provider connected yet. The giving forms express interest;
 they do not collect money or start recurring charges. When a verified hosted
-payment link is available, add an ordinary link to `capital/index.html` next to
-the `donate` panel, and a monthly-giving link next to `monthly-partner`. Keep the
+payment link is available, add an ordinary checkout link to `capital/one-time-gift/index.html`,
+and a monthly-giving checkout link to `capital/monthly-partner/index.html`.
+Update the matching buttons on `capital/index.html` if the checkout replaces an inquiry. Keep the
 inquiry forms as an alternative. Only describe online payment or recurring
 billing after the linked provider actually supports it. Card or bank details
 should be entered on the payment provider's checkout, not emailed through
@@ -173,3 +174,27 @@ skip-link keyboard behavior, expanded forms, required fields, and the full
 recipient/subject/body of each email draft. Use test data and intercept the
 email handoff when automating checks; draft generation does not verify email
 delivery. The forms also have a native mailto fallback when JavaScript is off.
+
+## Dedicated form pages and future member access
+
+All service and partner action buttons use normal links to separate pages.
+The coaching/capital overview pages contain choices rather than inline forms.
+`service-navigation.js` redirects the former service-section bookmarks to the
+new pages, so existing links to `#request-coaching`, `#become-coach`,
+`#capital-readiness`, `#donate`, and `#monthly-partner` still work.
+
+`members/index.html` lists six access pathways: coaches, ministries, schools,
+business leaders/coaches, investors/donors, and community organizations. Each
+has a separate page in `members/` and a direct button on its relevant public
+pathway. `members.css` contains the layout. These are public sign-in previews
+with disabled email/password controls and future resource placeholders. They
+do not authenticate, collect credentials, grant vetted status, or protect any
+content. No accounts or passwords are configured. Placeholder pages use
+`noindex` and are omitted from the sitemap; this is an indexing preference,
+not access control.
+
+Before enabling real login or adding confidential resources, connect a secure
+authentication service and verify invitation/approval, member identity, and
+server-enforced access to the requested resources. The public pages and the
+site itself can continue to use plain HTML, CSS, and JavaScript. Application
+submissions must not be treated as membership approval.

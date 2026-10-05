@@ -41,11 +41,3 @@ document.querySelectorAll('.interest-form').forEach((form) => {
     window.location.href = draftLink.href;
   });
 });
-
-// Direct links to a form also reveal its panel, including after navigating a page anchor.
-const revealLinkedForm = () => {
-  const target = document.getElementById(window.location.hash.slice(1));
-  if (target?.matches('details.form-panel')) target.open = true;
-};
-revealLinkedForm();
-window.addEventListener('hashchange', revealLinkedForm);

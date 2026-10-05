@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Seek coaching | Covenant Wealth</title>
+  <meta name="description" content="Request stage-specific Covenant Wealth business coaching for your goals, business stage, and next steps.">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel="stylesheet" href="../../forms.css">
+</head>
+<body class="homepage cw-site interest-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header dashboard-header">
+    <a class="brand" href="../../index.html" aria-label="Covenant Wealth home">
+      <span class="brand-mark" aria-hidden="true">CW</span>
+      <span class="brand-text">Covenant Wealth</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../../mission/">Mission</a>
+      <a href="../../coaching/">Coaching</a>
+      <a href="../../capital/">Capital &amp; Giving</a>
+      <a href="../../partners/">Partners</a>
+    </nav>
+  </header>
+  <main id="main-content" class="interest-layout" tabindex="-1">
+    <div class="interest-intro">
+      <p><a href="../">← Back to Coaching</a></p>
+      <p class="eyebrow">Coaching request</p>
+      <h1>Find guidance for your next stage.</h1>
+      <p class="lead">Tell us about your business and the decisions you are working through. This request starts a conversation about fit, coaching preferences, and next steps.</p>
+    </div>
+    <section class="interest-panel" aria-labelledby="request-coaching-heading">
+      <h2 id="request-coaching-heading">Request coaching</h2>
+      <p>Tell us where you are in the business life cycle and what you want to work on.</p>
+      <p id="request-coaching-help">Name and email are required. This opens your email app. Review and send the draft to <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a>.</p>
+      <form id="request-coaching-form" class="interest-form" action="mailto:joshumo95@gmail.com?subject=Covenant%20Wealth%20%E2%80%94%20Coaching%20request%20interest" method="post" enctype="text/plain" data-pathway="Coaching request" aria-describedby="request-coaching-help">
+        <div class="form-field">
+          <label for="request-name">Full name (required)</label>
+          <input id="request-name" name="name" data-label="Full name" required autocomplete="name" maxlength="160" type="text">
+        </div>
+        <div class="form-field">
+          <label for="request-email">Email address (required)</label>
+          <input id="request-email" name="email" data-label="Email address" required autocomplete="email" maxlength="254" type="email">
+        </div>
+        <div class="form-field">
+          <label for="request-organization">Business or organization name (optional)</label>
+          <input id="request-organization" name="organization" data-label="Business or organization name" autocomplete="organization" maxlength="160" type="text">
+        </div>
+        <div class="form-field">
+          <label for="request-stage">Business stage (required)</label>
+          <select id="request-stage" name="business_stage" data-label="Business stage" required><option value="">Choose an option</option><option value="Discover — calling and readiness">Discover — calling and readiness</option><option value="Launch — foundation">Launch — foundation</option><option value="Build — growth">Build — growth</option><option value="Scale — expansion">Scale — expansion</option><option value="Legacy — succession">Legacy — succession</option></select>
+        </div>
+        <div class="form-field">
+          <label for="request-goals">What would you like coaching to help you achieve? (required)</label>
+          <textarea id="request-goals" name="goals" data-label="What would you like coaching to help you achieve?" required rows="4" maxlength="1600"></textarea>
+        </div>
+        <div class="form-field">
+          <label for="request-preference">Coaching preference (optional)</label>
+          <select id="request-preference" name="coaching_preference" data-label="Coaching preference"><option value="">Choose an option</option><option value="One-to-one coaching">One-to-one coaching</option><option value="Cohort or group coaching">Cohort or group coaching</option><option value="Help me find the right fit">Help me find the right fit</option></select>
+        </div>
+        <button class="button" type="submit">Continue to email</button>
+        <p class="email-status" role="status"></p>
+        <a class="email-draft" hidden>Open prepared email</a>
+      </form>
+      <p class="email-fallback">No email app configured? Email <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a> directly and mention coaching request. Forms do not send messages automatically.</p>
+    </section>
+  </main>
+  <footer class="site-footer rich-footer">
+    <div>
+      <p><strong>Covenant Wealth</strong></p>
+      <p>Faith. Enterprise. Community impact.</p>
+    </div>
+    <nav aria-label="Footer navigation">
+      <a href="../../index.html">Home</a>
+      <a href="../../partners/">Partner with us</a>
+      <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a>
+    </nav>
+  </footer>
+  <script src="../../script.js"></script>
+  <script src="../../interest-form.js"></script>
+</body>
+</html>

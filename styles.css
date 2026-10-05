@@ -1141,3 +1141,37 @@ h3 {
 @media (prefers-reduced-motion: reduce) {
   .cw-site .portal-tile:hover { transform: none; }
 }
+
+/* Partner choices open dedicated application and member pages. */
+.partner-pathways-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 32px;
+}
+.partner-pathways-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--navy);
+  text-decoration: none;
+  font-weight: 700;
+}
+.partner-pathways-nav a:hover,
+.partner-pathways-nav a[aria-current="page"] {
+  background: var(--navy);
+  border-color: var(--navy);
+  color: var(--white);
+}
+.service-layout > .interest-intro { max-width: 850px; }
+.partner-actions { margin-top: 28px; }
+.member-entry-note { max-width: 760px; color: var(--muted); margin-top: 18px; }
+@media (max-width: 760px) {
+  .partner-actions { flex-direction: column; }
+  .partner-pathways-nav { gap: 8px; }
+  .partner-pathways-nav a { font-size: 0.94rem; padding-inline: 12px; }
+}

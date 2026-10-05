@@ -11,3 +11,5 @@
 @media(max-width:720px){.welcome{grid-template-columns:1fr;padding-block:32px;gap:28px}.welcome h1{font-size:clamp(2.4rem,8vw,3.3rem)}.lead{font-size:1.06rem}.mission-card{padding:24px}.mission-statement{font-size:1.06rem;line-height:1.6}.audience-cards{grid-template-columns:1fr;gap:14px}.audience-card{padding:18px}.card-top{margin-bottom:10px}.audience-card p{margin-bottom:12px}.site-footer{align-items:flex-start;flex-direction:column;gap:12px}.site-footer nav{gap:18px}.contact-layout{grid-template-columns:1fr}.question-panel{padding:22px}.page-intro{padding-top:32px}.home-pathways{padding-block:28px}.home-topics{padding-block:24px}}
 @media(max-width:360px){.brand{gap:8px;font-size:.91rem}.brand-mark{width:36px;height:36px}.menu-toggle{padding:8px 12px}.topic-cards{grid-template-columns:1fr}.hero-actions{gap:12px}}
 @media(prefers-reduced-motion:reduce){.audience-card{transition:none}.audience-card:hover{transform:none}}
+/* Keep the question action readable when it is the current page or hovered. */
+.site-nav a.nav-question { color: #fff; }
