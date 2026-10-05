@@ -1,0 +1,40 @@
+/* Shared enquiry forms; keeps the existing Covenant Wealth design system. */
+.skip-link { position: absolute; left: 16px; top: -90px; z-index: 100; background: #fff; color: var(--navy); padding: 12px 18px; border-radius: 8px; }
+.skip-link:focus { top: 12px; }
+:focus-visible { outline: 3px solid #956b1b; outline-offset: 4px; }
+section[id] { scroll-margin-top: 105px; }
+.quicklink-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.enquiry-section { display: grid; grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: clamp(28px, 5vw, 72px); align-items: start; background: var(--stone); }
+.enquiry-section > * { min-width: 0; }
+.enquiry-intro p { color: var(--muted); max-width: 540px; }
+.enquiry-intro .eyebrow { color: #176c59; }
+.enquiry-intro h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
+.enquiry-intro .small-note { font-size: .95rem; border-left: 3px solid var(--gold); padding-left: 18px; margin-top: 26px; }
+.interest-form { background: #fff; padding: clamp(20px, 3vw, 36px); border: 1px solid var(--border); border-top: 5px solid #176c59; border-radius: 22px; box-shadow: var(--shadow); }
+.interest-form fieldset { border: 0; padding: 0; margin: 0; min-width: 0; }
+.interest-form legend { font-size: 1.3rem; font-weight: 800; color: var(--navy); margin-bottom: 6px; }
+.form-hint { color: var(--muted); margin: 0 0 24px; font-size: .9rem; }
+.form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+.form-field { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.form-field.full { grid-column: 1 / -1; }
+.form-field label { color: var(--navy); font-weight: 700; font-size: .95rem; }
+.form-field label span { color: var(--muted); font-weight: 400; font-size: .86rem; }
+.interest-form input:not([type=checkbox]), .interest-form select, .interest-form textarea { width: 100%; min-width: 0; box-sizing: border-box; border: 1px solid #8fa3b1; border-radius: 9px; min-height: 46px; background: #fff; color: var(--ink); padding: 10px 12px; font: inherit; font-size: 1rem; }
+.interest-form textarea { resize: vertical; min-height: 110px; }
+.interest-form input:focus, .interest-form select:focus, .interest-form textarea:focus { border-color: #176c59; }
+.form-consent { display: flex; gap: 10px; align-items: flex-start; margin-top: 24px; font-size: .95rem; color: var(--ink); }
+.form-consent input { width: 18px; height: 18px; flex: 0 0 18px; margin-top: 4px; accent-color: #176c59; }
+.form-disclosure { font-size: .84rem; color: #536573; margin: 12px 0 20px; }
+.interest-form .button { border: 0; font: inherit; font-weight: 750; cursor: pointer; background: #176c59; color: #fff; }
+.interest-form button:disabled, .interest-form fieldset:disabled button { opacity: .65; cursor: not-allowed; }
+.form-status { margin: 16px 0 0; font-size: .94rem; overflow-wrap: anywhere; }
+.form-status:empty { display: none; }
+.form-status[data-state=success] { color: #135b44; border-left: 3px solid #176c59; padding: 12px; background: #edf7f2; }
+.form-status[data-state=error], .form-status[data-state=setup] { color: #74470c; background: #fff7e8; border-left: 3px solid #b48732; padding: 12px; }
+.form-trap { position: absolute; left: -10000px; width: 1px; height: 1px; overflow: hidden; }
+.audience-form-hero { min-height: auto; padding-top: 70px; padding-bottom: 70px; }
+.audience-form-hero h1 { font-size: clamp(2.5rem, 5vw, 4.4rem); }
+.audience-form-hero .stat-panel strong { font-size: clamp(1.5rem, 2.8vw, 2.1rem); }
+@media (max-width: 900px) { .enquiry-section { grid-template-columns: 1fr; } }
+@media (max-width: 760px) { .quicklink-grid, .form-grid { grid-template-columns: 1fr; } .interest-form { padding: 24px 20px; } .form-field.full { grid-column: auto; } .faith-strip { overflow-wrap: anywhere; } .tile-screen { flex-wrap: wrap; } }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { transition: none !important; } }
