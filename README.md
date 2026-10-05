@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/33034279/README.md)
 # Covenant Wealth Website Starter v2
 
 This is a beginner-friendly static website for Covenant Wealth.
