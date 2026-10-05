@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Entrepreneurs Interest | Covenant Wealth</title>
+  <meta name="description" content="Express your interest in the Covenant Wealth entrepreneurs pathway.">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="homepage interest-page">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <header class="site-header dashboard-header">
+    <a class="brand" href="../index.html" aria-label="Covenant Wealth home">
+      <span class="brand-mark" aria-hidden="true">CW</span>
+      <span class="brand-text">Covenant Wealth</span>
+    </a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html">Home</a>
+      <a href="../entrepreneurs/" aria-current="page">Entrepreneurs</a>
+      <a href="../churches/">Churches &amp; Ministries</a>
+      <a href="../investors/">Investors &amp; Donors</a>
+    </nav>
+  </header>
+  <main id="main-content" class="interest-layout" tabindex="-1">
+    <div class="interest-intro">
+      <p class="eyebrow">Entrepreneurs</p>
+      <h1>Build your next chapter.</h1>
+      <p class="lead">Tell us about your business and the support you are interested in: calling, coaching, cohorts, or business readiness.</p>
+      <p>This interest form starts a conversation. It does not commit you to a program or partnership.</p>
+      <a href="../index.html#dashboard">← Back to all pathways</a>
+    </div>
+    <section class="interest-panel" aria-labelledby="form-heading">
+      <h2 id="form-heading">Share your interest</h2>
+      <p id="form-help">Name and email are required. Continuing opens your email app with a draft addressed to joshumo95@gmail.com. Review it and press Send there.</p>
+      <form class="interest-form" action="mailto:joshumo95@gmail.com?subject=Covenant%20Wealth%20%E2%80%94%20Entrepreneurs%20interest" method="post" enctype="text/plain" data-pathway="Entrepreneurs" aria-describedby="form-help">
+        <div class="form-field">
+          <label for="full-name">Full name (required)</label>
+          <input id="full-name" name="name" autocomplete="name" maxlength="120" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address (required)</label>
+          <input id="email" name="email" type="email" autocomplete="email" maxlength="254" required>
+        </div>
+        <div class="form-field">
+          <label for="organization">Business name (optional)</label>
+          <input id="organization" name="organization" autocomplete="organization" maxlength="160">
+        </div>
+        <div class="form-field">
+          <label for="message">How would you like to get involved? (optional)</label>
+          <textarea id="message" name="message" rows="5" maxlength="2000"></textarea>
+        </div>
+        <button class="button" type="submit">Continue to email</button>
+        <p id="email-status" role="status"></p>
+        <a id="email-draft" hidden>Open prepared email</a>
+      </form>
+      <p class="email-fallback">No email app configured? Email <a href="mailto:joshumo95@gmail.com">joshumo95@gmail.com</a> directly and mention the entrepreneurs pathway.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p><strong>Covenant Wealth</strong> | Entrepreneurs</p>
+    <p><a href="../index.html">Back to homepage</a></p>
+  </footer>
+  <script src="../script.js"></script>
+  <script src="../interest-form.js"></script>
+</body>
+</html>

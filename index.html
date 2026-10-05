@@ -7,7 +7,8 @@
   <meta name="description" content="Welcome to Covenant Wealth, a faith-driven entrepreneurship ecosystem for entrepreneurs, churches, investors, and partners.">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="homepage">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <div class="faith-strip" role="note">
     <span>Nehemiah 2:20</span>
     <p>We arise and build — with faith, stewardship, and disciplined enterprise.</p>
@@ -18,7 +19,7 @@
       <span class="brand-mark" aria-hidden="true">CW</span>
       <span class="brand-text">Covenant Wealth</span>
     </a>
-    <button class="menu-toggle" aria-expanded="false" aria-controls="site-nav">Menu</button>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
     <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
       <a href="entrepreneurs/">Entrepreneurs</a>
       <a href="churches/">Churches</a>
@@ -29,7 +30,7 @@
     </nav>
   </header>
 
-  <main>
+  <main id="main-content" tabindex="-1">
     <section class="welcome-hero">
       <div class="hero-copy welcome-copy">
         <p class="eyebrow">Faith-driven enterprise ecosystem</p>
@@ -67,7 +68,7 @@
       <div class="portal-dashboard" aria-label="Covenant Wealth audience portals">
         <a class="portal-tile entrepreneur-tile" href="entrepreneurs/" aria-label="Open entrepreneur pathway">
           <div class="tile-screen">
-            <div class="tile-icon">E</div>
+            <div class="tile-icon" aria-hidden="true">E</div>
             <div>
               <span>Portal 01</span>
               <h3>Entrepreneurs</h3>
@@ -79,7 +80,7 @@
 
         <a class="portal-tile church-tile" href="churches/" aria-label="Open church and ministry pathway">
           <div class="tile-screen">
-            <div class="tile-icon">C</div>
+            <div class="tile-icon" aria-hidden="true">C</div>
             <div>
               <span>Portal 02</span>
               <h3>Churches & Ministries</h3>
@@ -91,7 +92,7 @@
 
         <a class="portal-tile investor-tile" href="investors/" aria-label="Open investor and donor pathway">
           <div class="tile-screen">
-            <div class="tile-icon">I</div>
+            <div class="tile-icon" aria-hidden="true">I</div>
             <div>
               <span>Portal 03</span>
               <h3>Investors & Donors</h3>
